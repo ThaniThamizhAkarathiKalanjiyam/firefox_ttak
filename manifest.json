@@ -1,0 +1,20 @@
+{
+
+  "description": "இணைய வழி தனித்தமிழகராதிக்களஞ்சியம். தமிழ்-ஆங்கிலம், ஆங்கிலம்-தமிழ் அகராதி. புதிய தமிழ்ச் சொல் உருவாக்கி மற்றும் கிரந்த சொல் நீக்கி",
+  "manifest_version": 2,
+  "name": "தனித்தமிழகராதிக்களஞ்சியம்",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/open-my-page-button",
+  "icons": {
+    "48": "icons/page-48.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/page-32.png"
+  }
+
+}
