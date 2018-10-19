@@ -3,7 +3,7 @@
   "description": "இணைய வழி தனித்தமிழகராதிக்களஞ்சியம். தமிழ்-ஆங்கிலம், ஆங்கிலம்-தமிழ் அகராதி. புதிய தமிழ்ச் சொல் உருவாக்கி மற்றும் கிரந்த சொல் நீக்கி",
   "manifest_version": 2,
   "name": "தனித்தமிழகராதிக்களஞ்சியம்",
-  "version": "2.8.3.25",
+  "version": "2.8.3.30", 
   "homepage_url": "https://addons.mozilla.org/en-US/firefox/addon/thanithamizhakarathikalanjiyam/",
   "icons": {
     "48": "icons/page-48.png"
