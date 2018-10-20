@@ -9,8 +9,27 @@
     <script src="scripts/jtable/jquery.jtable.js" type="text/javascript"></script>
 	
   </head>
-  <body>
-  <form>
+
+ <body data-spy="scroll" data-target=".bs-docs-sidebar"
+    data-twttr-rendered="true">
+    <div class="container">
+      <div class="ui-widget">
+        <div class="ui-state-highlight ui-corner-all">
+          <p align="center"> <u><b><font color="blue">தேமதுரத் தமிழோசை
+                  உலகெல்லாம் பரவும் வகை செய்வீர்!</font></b></u></p>
+        </div>
+      </div>
+      <!-- Docs nav ================================================== -->  
+<div id="tabs">
+<ul>
+<li><a href="#tabpgSolSearch">தேடல்</a></li>
+<li><a href="#tpSolUruvakki">சொல்லுருவாக்கி</a></li>
+<li><a href="#tpKiranthaNeekki">கிரந்த நீக்கி</a></li>
+<li><a href="#tpTamilNatkatti">தமிழ் நாட்காட்டி</a></li>
+</ul>
+<div id="tabpgSolSearch" class="container">
+<div class="filtering">
+<form>
 <label>
 	சொல்:
 <input type="text" name="word" id="word"  class="input-medium search-query"/></label>
@@ -21,9 +40,49 @@
 <button type="submit" id="LoadRecordsButton" class="btn btn-primary">தேடல்</button>
 <button type="submit" id="sendEmail" class="btn btn-primary">மின்னஞ்சல் செய்</button>
 </form>
+</div>
+<div id="TaDictionaryTableContainer" ></div>
 
-	<div id="TaDictionaryTableContainer" style="width: 600px;"></div>
-			
-<script src="scripts/x586923tak.js" type="text/javascript"></script> 
+</div>	
+<div id="tpSolUruvakki">
+கட்டமைப்பில் உள்ளது.
+</div>
+<div id="tpKiranthaNeekki">
+கட்டமைப்பில் உள்ளது.
+</div>
+
+<div id="tpTamilNatkatti">
+
+	
+நாள்: <div id="datepicker"></div>
+
+<div class="demo-description">
+<p>Display the datepicker embedded in the page instead of in an overlay.  Simply call .datepicker() on a div instead of an input.</p>
+</div>
+</div>
+
+</div>
+          <!-- End demo --> </div>
+      
+    
+    <!-- Footer
+================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p> <a href="https://groups.yahoo.com/neo/groups/isaiyini/info">இசையினி குழுமம்</a> "© Free" 2007 - 2018. </p>
+        <ul class="footer-links">
+		<li><a href="https://thanithamizhakarathikalanjiyam.github.io/">TTAK Dictionary</a></li>
+		<li class="muted">·</li>
+          <li><a href="https://addons.mozilla.org/en-US/firefox/addon/thanithamizhakarathikalanjiyam/">Home</a></li>
+          <li class="muted">·</li>
+          <li><a
+href="mailto:isaiyini-subscribe@yahoogroups.com?Subject=[JoinMe]%20Yes%20join%20me%20to%20the%20Groupmail%20list.&Body=Just%20click%20send%20button.">Subscribe</a></li>
+<li class="muted">·</li>
+<li><a
+href="mailto:isaiyini@yahoogroups.com?Subject=[TTAKCorrection]%20Word%20ID:">Issues</a></li>
+        </ul>
+      </div>
+    </footer>
+  
   </body>
 </html>
