@@ -1,3 +1,5 @@
+
+
 var _0x3984=['trim','split','substr','பொருள்','90%','#TaDictionaryTableContainer','load','#LoadRecordsButton','preventDefault','#word','val','#meaning','click','#tabs,#tabs2','tabs','jtable','title\x20ASC','Deferred','jtStartIndex','&number=','jtPageSize','length','&search=\x22`','ajax','GET','50000','posts','resolve','reject','சொல்லெண்','record','title',':#:'];
 (function(_0x11616e,_0x1c2868){var _0x506330=function(_0x19e9dc){while(--_0x19e9dc){_0x11616e['push'](_0x11616e['shift']());
 }};
@@ -26,3 +28,4 @@ $('#sendEmail')[_0x3b1b('0x20')](function(_0x518097){_0x518097[_0x3b1b('0x1c')](
 alert('விரைவில்\x20பயன்பாட்டிற்கு\x20வரும்.');
 });
 });
+
