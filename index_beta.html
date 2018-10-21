@@ -58,6 +58,12 @@
 		<li><a href="#tabs-4">நாட்காட்டி</a></li>
 	</ul>
 	<div id="tabs-1">
+	
+		<h2 class="demoHeaders">தேடு சொல்</h2>
+		<div>
+			<input id="autocomplete" title="type &quot;a&quot;">
+		</div>
+		
 		<div id="images"></div>
  
 		
@@ -226,9 +232,39 @@ $( "#dialog-link, #icons li" ).hover(
 		$.each( data.posts, function( i, item ) {  
 			$( "<p>" ).html((i + 1) + ": <b>" + item.title + "</b>").appendTo( "#images" );
       });
+	  
 	  $( "<p>" ).html("இதுவரை இயங்கலையில் உள்ள சொற்களின் எண்ணிக்கை: " + data.found ).appendTo( "#images" );
     });
 })();
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
 </script>
  
 </body>
