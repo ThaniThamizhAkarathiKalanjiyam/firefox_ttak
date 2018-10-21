@@ -221,9 +221,10 @@ $( "#dialog-link, #icons li" ).hover(
 	number: 10,
     format: "json"
   })
-    .done(function( data ) {		
+    .done(function( data ) {	
+	
 		$.each( data.posts, function( i, item ) {  
-			$( "<p>" ).html(i + ": <b>" + item.title + "</b>").appendTo( "#images" );
+			$( "<p>" ).html((i + 1) + ": <b>" + item.title + "</b>").appendTo( "#images" );
       });
 	  $( "<p>" ).html("இதுவரை இயங்கலையில் உள்ள சொற்களின் எண்ணிக்கை: " + data.found ).appendTo( "#images" );
     });
