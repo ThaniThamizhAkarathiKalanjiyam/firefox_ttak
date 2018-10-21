@@ -191,6 +191,8 @@ $("#images").empty();
 $("#info").empty();
 $( "<p>" ).html("Please enter word .. Then press enter button.").appendTo( "#info" );
 
+$( "#autocomplete" ).autocomplete();
+
 $("#autocomplete").change(function() {
 
 $("#images").empty();
