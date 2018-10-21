@@ -187,11 +187,15 @@ $( "#dialog-link, #icons li" ).hover(
 
 <script>
 
+var titles = [];
+
 $("#images").empty();
 $("#info").empty();
 $( "<p>" ).html("Please enter word .. Then press enter button.").appendTo( "#info" );
 
-$( "#autocomplete" ).autocomplete();
+$( "#autocomplete" ).autocomplete({
+	source: titles
+});
 
 $("#autocomplete").change(function() {
 
@@ -212,7 +216,7 @@ $( "<p>" ).html("Please wait .. I am working").appendTo( "#info" );
     format: "json"
   })
     .done(function( data ) {
-		var titles = [];
+		
 				
 		$.each( data.posts, function( i, item ) {  
 			titles.push(item.title)
