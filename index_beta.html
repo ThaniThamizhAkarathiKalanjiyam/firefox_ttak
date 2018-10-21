@@ -219,19 +219,23 @@ $( "#dialog-link, #icons li" ).hover(
 
 <script>
 
-var titles = [];
+$(document).ready(function() {
 
-(function() {
+$("#autocomplete").change(function() {
   var flickerAPI = "https://public-api.wordpress.com/rest/v1/sites/130297357/posts?";
   $.getJSON( flickerAPI, {
     order: "DESC",
 	order_by: "date",
 	offset: 0,
+	number: 10,	
+	offset: 0,
 	number: 10,
+	search: $("#autocomplete").text()
+	
     format: "json"
   })
-    .done(function( data ) {	
-		
+    .done(function( data ) {
+		var titles = [];
 		
 		$.each( data.posts, function( i, item ) {  
 			titles.push(item.title)
@@ -247,7 +251,10 @@ var titles = [];
 			source: titles
 		});
     });
-})();
+});
+
+
+});
 
 
 
