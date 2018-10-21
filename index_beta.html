@@ -234,6 +234,7 @@ $("#autocomplete").change(function() {
   })
     .done(function( data ) {
 		var titles = [];
+		$("#images").empty();
 		
 		$.each( data.posts, function( i, item ) {  
 			titles.push(item.title)
