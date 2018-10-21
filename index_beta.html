@@ -244,10 +244,8 @@ $("#autocomplete").change(function() {
 		});
 	  
 		$( "<p>" ).html("இதுவரை இயங்கலையில் உள்ள சொற்களின் எண்ணிக்கை: " + data.found ).appendTo( "#images" );
-		
-		$( "#autocomplete" ).autocomplete({
-			source: titles
-		});
+				
+		$('#autocomplete').autocomplete("option", { source: titles });
     });
 });
 
