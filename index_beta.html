@@ -213,10 +213,12 @@ $( "#dialog-link, #icons li" ).hover(
 
 <script>
 (function() {
-  var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  var flickerAPI = "https://public-api.wordpress.com/rest/v1/sites/130297357/posts?";
   $.getJSON( flickerAPI, {
-    tags: "mount rainier",
-    tagmode: "any",
+    order: "DESC",
+	order_by: "date",
+	offset: 0,
+	number: 10,
     format: "json"
   })
     .done(function( data ) {
