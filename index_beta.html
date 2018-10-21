@@ -223,8 +223,8 @@ $( "#dialog-link, #icons li" ).hover(
   })
     .done(function( data ) {
       $.each( data.items, function( i, item ) {  
-		
-        $( "<p>" ).attr( "src", item.found ).appendTo( "#images" );
+		alert ("item");
+        $( "<p>" ).text( "src", item.found ).appendTo( "#images" );
         if ( i === 3 ) {
           return false;
         }
