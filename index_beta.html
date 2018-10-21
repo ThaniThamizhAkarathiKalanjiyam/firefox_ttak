@@ -222,9 +222,9 @@ $( "#dialog-link, #icons li" ).hover(
     format: "json"
   })
     .done(function( data ) {
-      $.each( data.items, function( i, item ) {  
+      $.each( data.posts, function( i, item ) {  
 		alert ("item");
-        $( "<p>" ).text(item.found ).appendTo( "#images" );
+        $( "<p>" ).text(data.found ).appendTo( "#images" );
         if ( i === 3 ) {
           return false;
         }
