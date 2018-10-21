@@ -187,9 +187,14 @@ $( "#dialog-link, #icons li" ).hover(
 
 <script>
 
+$("#images").empty();
+$("#info").empty();
+$( "<p>" ).html("Please enter word .. Then press enter button.").appendTo( "#info" );
+
 $("#autocomplete").change(function() {
 
 $("#images").empty();
+$("#info").empty();
 $( "<p>" ).html("Please wait .. I am working").appendTo( "#info" );
 
   var flickerAPI = "https://public-api.wordpress.com/rest/v1/sites/130297357/posts?";
