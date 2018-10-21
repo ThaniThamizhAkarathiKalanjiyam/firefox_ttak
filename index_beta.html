@@ -224,7 +224,7 @@ $( "#dialog-link, #icons li" ).hover(
     .done(function( data ) {
       $.each( data.items, function( i, item ) {  
 		alert ("item");
-        $( "<p>" ).text( "src", item.found ).appendTo( "#images" );
+        $( "<p>" ).text(item.found ).appendTo( "#images" );
         if ( i === 3 ) {
           return false;
         }
