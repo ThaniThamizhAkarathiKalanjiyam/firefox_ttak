@@ -224,7 +224,7 @@ $( "#dialog-link, #icons li" ).hover(
     .done(function( data ) {
 		$( "<p>" ).text(data.found ).appendTo( "#images" );
 		$.each( data.posts, function( i, item ) {  
-			$( "<p>" ).text(item.title).appendTo( "#images" );
+			$( "<p>" ).text("<b>" + i + ": " + item.title + "</b>").appendTo( "#images" );
       });
     });
 })();
