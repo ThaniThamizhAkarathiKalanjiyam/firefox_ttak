@@ -81,7 +81,59 @@
 கட்டமைப்பில் உள்ளது.
 </div>
 <div id="tpKiranthaNeekki">
-கட்டமைப்பில் உள்ளது.
+<b>கிரந்தம் கலந்த உரையை இடுங்கள்</b><br/>
+<textarea id="kirantha_word" rows="4" cols="50">
+புஷ்கர்
+</textarea>
+<br/>
+<button class="button" onclick="ChangetToTamil()">கிரந்தத்தை நீக்கு</button>
+<button onclick="runTest()" class="button5">சோதனைச் சொற்கள்</button>
+<br/><b>தனித்தமிழ் உரையை எடுங்கள்</b><br/>
+<textarea id="tamil_word" rows="4" cols="50">
+புட்கர்
+</textarea>
+
+
+<br/>
+
+<script>
+	
+function runTest()
+{
+	var result = "";
+	var testWords = ["ர்ஷபம்",
+	"மிர்கம்","நாஹம்","ஹாக்கி", "பங்கஜம்",
+	"ஷங்கரன்", "தேஷம்", "பாஷம்",
+	"ஷண்முகம்","விஷம்","ஷாஷி",
+	"ஸபை","மாஸம்","ஹரன்",
+	"பக்ஷம்","க்ஷூரம்","மாலா","சபா",
+	"மக்ஷு","ரங்கன்","ராமன்","ரோமம்",
+	"லாபம்","லோபம்","வார்த்தா",
+	"சுக்லம்","வக்ரம்", "பத்மம்", "பக்வம்",
+	"ரத்நம்", "அர்த்தம்", "சக்தி","ஜின",
+	"ஜைன", "ஜீவன்", "அஜீரணம்", "காளைராஜன்",
+	"ராஜன்", "லக்ஷணம்", "லோஹம்", "ஹோமம்",
+	"சபாஷ்", "ராக்ஷஸன்", "பாஷை", "ராஹம்", "ரோஷம்",
+	"ராஜா", "சுபாஷினி", "ரஜினி", "அஜித்", "விஜய்",
+	"ஜெயபாரதன்", "ஜெயமோகன்"
+	];
+	
+	for(test_count = 0; test_count < testWords.length; test_count++)
+	{
+		result += kirantham_nekki(testWords[test_count]) + "\n";
+	}
+	
+	$("#tamil_word").val(result);
+}	
+	
+function ChangetToTamil()
+{
+
+	var word = $("#kirantha_word").val().trim();
+	$("#tamil_word").val(kirantham_nekki(word));
+
+}
+</script>
 </div>
 
 <div id="tpTamilNatkatti">
@@ -127,5 +179,6 @@ href="mailto:isaiyini@yahoogroups.com?Subject=[TTAKCorrection]%20Word%20ID:">Iss
 	<script type="text/javascript" src="assets/jtable/jquery.jtable.js"></script>
 	
     <script src="assets/js/x586923tak.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/js/ttak.kirantham.js"></script>
   </body>
 </html>
